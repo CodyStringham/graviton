@@ -1,0 +1,75 @@
+.btn {
+  position: relative;
+  font-family: inherit;
+  font-size: 100%;
+  padding: .5em 1em;
+  color: $dark;
+  border: 0;
+  border-radius: 0px;
+  border-bottom: 2px solid darken($light, 10%);
+  background-color: $light;
+  margin: 5px 5px 0 0;
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &:hover {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.05);
+    }
+  }
+  &.primary, &.primary-light, &.accent, &.contrast, &.success, &.danger {
+    color: white;
+  }
+  &.primary {
+    background: $primary;
+    border-color: darken($primary, 10%);
+  }
+  &.primary-light {
+    background: $primary-light;
+    border-color: darken($primary-light, 10%);
+  }
+  &.accent {
+    background: $accent;
+    border-color: darken($accent, 10%);
+  }
+  &.contrast {
+    background: $contrast;
+    border-color: darken($contrast, 10%);
+  }
+  &.success {
+    background: $success;
+    border-color: darken($success, 10%);
+  }
+  &.danger {
+    background: $danger;
+    border-color: darken($danger, 10%);
+  }
+  &.ghost{
+    background: transparent;
+    color: inherit;
+    border: none;
+  }
+  &.xs { font-size: 50% }
+  &.sm { font-size: 75% }
+  &.lg { font-size: 125% }
+  &.xl { font-size: 150% }
+  &.stretch { width: 100% }
+}
