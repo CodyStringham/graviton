@@ -1,0 +1,66 @@
+// * * * * * * * * * * * * * * * * * * * * * * * *
+//                                          select
+// * * * * * * * * * * * * * * * * * * * * * * * *
+.input-group {
+  margin-bottom: 10px;
+  position: relative;
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type='text'],
+  input[type='date'],
+  input[type='email'],
+  input[type='password'],
+  div.text-area {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    background-color: transparent;
+    color: $dark;
+    border: 0;
+    outline: none;
+    padding: 0;
+    border-bottom: 1px solid $mid;
+    width: 100%;
+  }
+}
+
+
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * *
+//                                          select
+// * * * * * * * * * * * * * * * * * * * * * * * *
+.grav-select {
+  position: relative;
+  display: inline-block;
+  &:after {
+    position: absolute;
+    z-index: 10;
+    content: '▾';
+    color: $dark;
+    font-size: 12px;
+    right: 10px;
+    bottom: 10.5px;
+    pointer-events: none;
+  }
+  select {
+    position: relative;
+    width: 120px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: $light;
+    color: $dark;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 9px 10px;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    cursor: pointer;
+    border-bottom: 2px solid darken($light, 10%);
+  }
+}
